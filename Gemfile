@@ -9,9 +9,9 @@ gem 'net-smtp', require: false
 
 gem 'eventmachine'
 gem 'thin'
-gem 'sinatra', '>= 2.2.0'
-gem 'rack', '>= 2.2.4'
-gem 'rack-protection', '>= 2.2.0'
+gem 'sinatra', '>= 3.0.2'
+gem 'rack', '>= 2.2.6.3'
+gem 'rack-protection', '>= 3.0.2'
 gem 'em-websocket' # WebSocket support
 gem 'uglifier', '>= 4.2.0'
 gem 'mime-types'
