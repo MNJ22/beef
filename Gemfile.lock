@@ -1,12 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (7.0.4)
-      activesupport (= 7.0.4)
-    activerecord (7.0.4)
-      activemodel (= 7.0.4)
-      activesupport (= 7.0.4)
-    activesupport (7.0.4)
+    activemodel (7.0.4.3)
+      activesupport (= 7.0.4.3)
+    activerecord (7.0.4.3)
+      activemodel (= 7.0.4.3)
+      activesupport (= 7.0.4.3)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -28,7 +28,7 @@ GEM
     browserstack-local (1.4.0)
     buftok (0.2.0)
     byebug (11.1.3)
-    capybara (3.37.1)
+    capybara (3.38.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
@@ -39,7 +39,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     coderay (1.1.3)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     console (1.16.2)
       fiber-local
     curb (1.0.1)
@@ -94,7 +94,8 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
-    minitest (5.16.3)
+    mini_portile2 (2.8.1)
+    minitest (5.18.0)
     mojo_magick (0.6.7)
     msfrpc-client (1.1.2)
       msgpack (~> 1)
@@ -109,9 +110,12 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.9-x86_64-linux)
+    nokogiri (1.14.2)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    otr-activerecord (2.1.1)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
+    otr-activerecord (2.1.2)
       activerecord (>= 4.0, < 7.1)
       hashie-forbidden_attributes (~> 0.1)
     parallel (1.22.1)
@@ -127,21 +131,21 @@ GEM
       pry (>= 0.13, < 0.15)
     psych (4.0.6)
       stringio
-    public_suffix (5.0.0)
+    public_suffix (5.0.1)
     qr4r (0.6.1)
       mojo_magick (~> 0.6.5)
       rqrcode_core (~> 0.1)
-    racc (1.6.0)
-    rack (2.2.4)
-    rack-protection (3.0.2)
+    racc (1.6.2)
+    rack (2.2.6.4)
+    rack-protection (3.0.5)
       rack
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rainbow (3.1.1)
     rake (13.0.6)
     rdoc (6.4.0)
       psych (>= 4.0.0)
-    regexp_parser (2.6.0)
+    regexp_parser (2.7.0)
     reline (0.3.1)
       io-console (~> 0.5)
     rest-client (2.1.0)
@@ -189,12 +193,14 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     simple_oauth (0.3.1)
-    sinatra (3.0.2)
+    sinatra (3.0.5)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.0.2)
+      rack-protection (= 3.0.5)
       tilt (~> 2.0)
     slack-notifier (2.4.0)
+    sqlite3 (1.5.3)
+      mini_portile2 (~> 2.8.0)
     sqlite3 (1.5.3-x86_64-linux)
     stringio (3.0.2)
     sync (0.5.0)
@@ -222,7 +228,7 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     thread_safe (0.3.6)
-    tilt (2.0.11)
+    tilt (2.1.0)
     timeout (0.3.0)
     timers (4.3.5)
     tins (1.31.1)
@@ -238,7 +244,7 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -257,6 +263,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -278,12 +285,12 @@ DEPENDENCIES
   mime-types
   msfrpc-client
   net-smtp
-  otr-activerecord (>= 1.4.2)
+  otr-activerecord (>= 2.1.1)
   parseconfig
   pry-byebug
   qr4r
-  rack (>= 2.2.4)
-  rack-protection (>= 2.2.0)
+  rack (>= 2.2.6.4)
+  rack-protection (>= 3.0.2)
   rake (>= 13.0)
   rdoc
   rest-client (>= 2.1.0)
@@ -292,7 +299,7 @@ DEPENDENCIES
   rubyzip (>= 1.2.2)
   rushover
   selenium-webdriver
-  sinatra (>= 2.2.0)
+  sinatra (>= 3.0.2)
   slack-notifier
   sqlite3
   term-ansicolor
@@ -306,4 +313,4 @@ DEPENDENCIES
   xmlrpc
 
 BUNDLED WITH
-   2.3.19
+   2.1.4
