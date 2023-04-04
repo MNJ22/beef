@@ -9,9 +9,9 @@ gem 'net-smtp', require: false
 
 gem 'eventmachine'
 gem 'thin'
-gem 'sinatra', '>= 2.2.0'
-gem 'rack', '>= 2.2.4'
-gem 'rack-protection', '>= 2.2.0'
+gem 'sinatra', '>= 3.0.4'
+gem 'rack', '>= 3.0.0'
+gem 'rack-protection', '>= 3.0.2'
 gem 'em-websocket' # WebSocket support
 gem 'uglifier', '>= 4.2.0'
 gem 'mime-types'
@@ -22,7 +22,7 @@ gem 'json'
 gem 'rubyzip', '>= 1.2.2'
 gem 'espeak-ruby', '>= 1.0.4' # Text-to-Voice
 gem 'rake', '>= 13.0'
-gem 'otr-activerecord', '>= 1.4.2'
+gem 'otr-activerecord', '>= 2.1.1'
 gem 'sqlite3'
 gem 'rubocop', '~> 1.37.1', require: false
 
