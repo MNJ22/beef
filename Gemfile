@@ -78,7 +78,7 @@ group :test do
     # nokogirl is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara'
+    gem 'capybara', '>= 3.38.0'
     # RESTful API tests/generic command module tests
     gem 'rest-client', '>= 2.1.0'
     gem 'irb'
