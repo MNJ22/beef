@@ -8,10 +8,10 @@
 gem 'net-smtp', require: false
 
 gem 'eventmachine'
-gem 'thin'
-gem 'sinatra', '>= 2.2.0'
+gem 'thin', '>= 2.0.0'
+gem 'sinatra', '>= 3.0.3'
 gem 'rack', '>= 2.2.4'
-gem 'rack-protection', '>= 2.2.0'
+gem 'rack-protection', '>= 3.0.3'
 gem 'em-websocket' # WebSocket support
 gem 'uglifier', '>= 4.2.0'
 gem 'mime-types'
@@ -22,7 +22,7 @@ gem 'json'
 gem 'rubyzip', '>= 1.2.2'
 gem 'espeak-ruby', '>= 1.0.4' # Text-to-Voice
 gem 'rake', '>= 13.0'
-gem 'otr-activerecord', '>= 1.4.2'
+gem 'otr-activerecord', '>= 2.1.2'
 gem 'sqlite3'
 gem 'rubocop', '~> 1.37.1', require: false
 
@@ -37,7 +37,7 @@ gem 'erubis'
 # Metasploit Integration extension
 group :ext_msf do
   gem 'msfrpc-client'
-  gem 'xmlrpc'
+  gem 'xmlrpc', '>= 0.3.3'
 end
 
 # Notifications extension
@@ -74,11 +74,11 @@ group :test do
     # selenium-webdriver 3.x is incompatible with Firefox version 48 and prior
     # gem 'selenium' # Requires old version of selenium which is no longer available
     gem 'geckodriver-helper'
-    gem 'selenium-webdriver'
+    gem 'selenium-webdriver', '>= 4.6.0'
     # nokogirl is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara'
+    gem 'capybara', '>= 3.38.0'
     # RESTful API tests/generic command module tests
     gem 'rest-client', '>= 2.1.0'
     gem 'irb'
