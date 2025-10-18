@@ -8,10 +8,10 @@
 gem 'net-smtp', require: false
 
 gem 'eventmachine'
-gem 'thin'
-gem 'sinatra', '>= 2.2.0'
-gem 'rack', '>= 2.2.4'
-gem 'rack-protection', '>= 2.2.0'
+gem 'thin', '>= 1.8.2'
+gem 'sinatra', '>= 4.2.0'
+gem 'rack', '>= 2.2.20'
+gem 'rack-protection', '>= 3.0.3'
 gem 'em-websocket' # WebSocket support
 gem 'uglifier', '>= 4.2.0'
 gem 'mime-types'
@@ -78,7 +78,7 @@ group :test do
     # nokogirl is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
     # sudo port install libxml2 libxslt
-    gem 'capybara'
+    gem 'capybara', '>= 3.38.0'
     # RESTful API tests/generic command module tests
     gem 'rest-client', '>= 2.1.0'
     gem 'irb'
